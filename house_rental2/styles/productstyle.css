@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #222;
+}
+
+.main-div {
+  position: relative;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  padding: 4rem;
+  margin-top: 7rem;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #333;
+}
+
+.left-div {
+  flex: 50%;
+}
+
+.right-div {
+  flex: 50;
+  padding: 3rem;
+}
+
+.left-div img {
+  width: 100%;
+  transition: 0.2s ease-in-out;
+}
+
+.left-div img:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.prpt-name {
+  color: aliceblue;
+  font-size: 2rem;
+}
+
+.prpt-price {
+  margin-top: 2rem;
+  color: rgba(182, 182, 182, 0.636);
+  font-size: 1.5rem;
+}
+
+.prpt-price span {
+  color: greenyellow;
+  font-size: 2rem;
+}
+
+.prpt-status {
+  color: antiquewhite;
+}
+
+.cent-div {
+  position: relative;
+  flex-direction: column;
+  background-color: #333;
+  width: 90%;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 6rem;
+}
+
+.content-desc {
+  margin-top: 2rem;
+  color: #989898;
+  font-size: 1.4rem;
+  text-align: justify;
+}
+
+.with-bg {
+  background-color: rgb(43, 41, 41);
+  padding: 2rem;
+}
+
+.contact-btn {
+  width: 100%;
+  height: 4rem;
+  margin-top: 3rem;
+  font-size: large;
+  outline: none;
+  border: none;
+  background-color: rgb(153, 205, 50);
+  transition: 0.2s ease-in-out;
+}
+
+.contact-btn:hover {
+  background-color: yellowgreen;
+  box-shadow: rgba(153, 205, 50, 0.526) 0px 54px 55px,
+    rgba(153, 205, 50, 0.577) 0px -12px 30px,
+    rgba(153, 205, 50, 0.496) 0px 4px 6px,
+    rgba(153, 205, 50, 0.536) 0px 12px 13px,
+    rgba(153, 205, 50, 0.483) 0px -3px 5px;
+}
+
+.map-div {
+  margin-top: 3rem;
+  background-color: #989898;
+  height: 20rem;
+  transition: 0.2s ease-in-out;
+  border-radius: 10px;
+}
+
+.map-div iframe {
+  border-radius: 15px;
+}
+
+.map-div:hover {
+  height: 40rem;
+}
+
+.get-dir-btn {
+  padding: 1.6rem 5rem;
+  margin-top: 2rem;
+  background-color: rgb(212, 212, 212);
+  outline: none;
+  border: none;
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+}
+
+.get-dir-btn:hover {
+  background-color: yellowgreen;
+}
+
+.prv-btn {
+  background-color: transparent;
+  width: 4rem;
+  height: 4rem;
+
+  position: fixed;
+  bottom: 2rem;
+  border: 2px solid grey;
+  border-radius: 60px;
+  left: 2rem;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: grey;
+}
+
+.images {
+  width: 100%;
+}
+
+.images img {
+  width: 100%;
+  filter: blur(10px);
+  transition: 0.2s ease-in-out;
+}
+
+.images img:hover {
+  filter: blur(0px);
+}
+
+.image {
+  margin-top: 2rem;
+  display: flex;
+}

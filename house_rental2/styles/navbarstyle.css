@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Iso&family=Rubik+Marker+Hatch&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap%27");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+
+  scroll-behavior: smooth;
+}
+
+.scrolled .navbar {
+  background-color: rgba(17, 15, 15, 0.967);
+}
+
+.scrolled .nav-btn {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.scrolleddrk .navbar {
+  transition: 2s;
+  background-color: #000;
+}
+
+.scrolleddrk .nav-contents ul a {
+  color: #fff;
+}
+
+.scrolleddrk .logo img {
+  -webkit-filter: grayscale(0) invert(0);
+  filter: grayscale(0) invert(0);
+}
+
+.scrolleddrk .nav-btn {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 10px 50px;
+  background: rgb(24, 23, 23);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  z-index: 99999;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: 0.2s all ease-in;
+  justify-content: center;
+}
+
+.nav-contents {
+  flex: 1;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.nav-contents ul {
+  margin-left: 5rem;
+  display: inline;
+}
+
+.nav-contents ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 5px;
+  transition: 0.2s all ease-in-out;
+}
+
+.nav-contents ul a {
+  color: rgb(146, 143, 143);
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.nav-contents ul li:hover {
+  color: #4f76cb;
+}
+
+.nav-btn {
+  /* padding: 1rem 1rem; */
+  color: #fff;
+  border: 0;
+  margin-top: 8px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+
+.nav-btn:hover {
+  color: #4fcb53;
+}
+
+.nav-contents .nav-btn {
+  float: right;
+}
+
+.install-btn {
+  float: right;
+  padding: 0.6rem 1.7rem;
+  margin-top: 0.3rem;
+  background-color: yellowgreen;
+  outline: none;
+  color: #fff;
+  margin-left: 1rem;
+  border-radius: 20px;
+}
+
+.install-btn:hover {
+  background-color: rgb(163, 231, 28);
+}
+
+.btn {
+  position: relative;
+  display: flex;
+  padding: 10px 30px;
+  background: transparent;
+  color: rgb(10, 8, 8);
+  text-decoration: none;
+  letter-spacing: 1px;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.btn span {
+  position: relative;
+  z-index: 1;
+}
+
+/* .btn::before
+{
+    content: '';
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%, -50%);
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    background: rgba(24, 149, 180, 0.747);
+    transition: width 1s, height 1s;
+} */
+
+.btn:hover {
+  /* From https://css.glass */
+  color: rgb(13, 100, 207);
+}
+
+.navbar #hehe {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .navbar {
+    padding: 10px 30px;
+  }
+
+  .bi-list {
+    position: absolute;
+    right: 20px;
+    top: 0px;
+  }
+
+  .navbar .bi {
+    display: block;
+    color: #fff;
+    margin: 10px 25px;
+    font-size: 22px;
+  }
+
+  .navbar #hehe {
+    display: block;
+  }
+  .nav-contents {
+    height: 100vh;
+    width: 80%;
+
+    background: rgba(13, 13, 13, 0.55);
+
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    top: 0;
+    right: -100%;
+    position: absolute;
+
+    z-index: 999;
+    transition: 0.2s;
+  }
+
+  .nav-contents ul a {
+    display: block;
+    color: #bdb5b2;
+    font-size: 2rem;
+    padding: 10px 30px;
+  }
+
+  .nav-contents ul a:hover {
+    /* From https://css.glass */
+    background: rgba(225, 212, 212, 0.55);
+
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    color: rgb(172, 165, 165);
+  }
+
+  .nav-contents .nav-btn {
+    float: none;
+    margin-left: 25px;
+    margin-top: 10px;
+  }
+
+  .nav-btn {
+    background-color: transparent;
+    color: white;
+  }
+  .install-btn {
+    visibility: hidden;
+  }
+}
