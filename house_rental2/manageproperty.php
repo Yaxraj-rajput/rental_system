@@ -102,7 +102,8 @@ $read=$conn->query($query);
         <div class="card-side-right">
         <h1 class="content-card-title"><?php echo  $row['name'];   ?></h1>
         <h2 class="content-card-rent"><?php echo  $row['monthly'];   ?>$</h2>
-        <a href="editproperty.php?id=<?php echo  $row['id'];  ?>&monthly=<?php echo  $row['monthly'];   ?>&name=<?php echo  $row['name'];   ?>&city=<?php echo  $row['city'];   ?>&address=<?php echo  $row['address'];   ?>&access=<?php echo  $row['access'];   ?>&floor=<?php echo  $row['floor'];   ?>&bhk=<?php echo  $row['bhk'];   ?>&utility=<?php echo  $row['utility'];   ?>&descrip=<?php echo  $row['descrip'];   ?>&status=<?php echo  $row['status'];   ?>"> <button class="card-visit-btn">Edit Details</button></a>
+        <a href="editproperty.php?id=<?php echo  $row['id'];  ?>&monthly=<?php echo  $row['monthly'];   ?>&name=<?php echo  $row['name'];   ?>&city=<?php echo  $row['city'];   ?>&address=<?php echo  $row['address'];   ?>&access=<?php echo  $row['access'];   ?>&floor=<?php echo  $row['floor'];   ?>&bhk=<?php echo  $row['bhk'];   ?>&utility=<?php echo  $row['utility'];   ?>&descrip=<?php echo  $row['descrip'];   ?>&status=<?php echo  $row['status'];   ?>"> <button style="margin: 1rem;" class="card-visit-btn">Edit Details</button></a>
+        <a href="deleteproperty.php?id=<?php echo  $row['id'];  ?>"> <button class="card-visit-btn" style="margin: 1rem; background-color: #630909;">DELETE</button></a>
         </div>
       </div>
 

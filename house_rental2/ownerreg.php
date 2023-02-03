@@ -61,7 +61,7 @@ header("Location: ownerlogin.php");
 <body>
 	<div class="container">
 		<form action="" method="POST" class="login-email">
-            <p class="login-text" style="font-size: 2rem; font-weight: 800;">Register</p>
+            <p class="login-text" style="font-size: 2rem; font-weight: 800;">Register (Owner)</p>
 			<div class="input-group">
 				<input type="text" placeholder="ownername" name="ownername" value="<?php echo $ownername; ?>" required>
 			</div>
